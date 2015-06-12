@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script src="popup.js"></script>
+<style>
+.realtimevalue{font-weight:bold;color:#111;}
+#status{color:#70c573;}
+</style>
+</head>
+<body>
+<div id="options">
+    <div>
+        <div style="float:left;">TOP &nbsp</div>
+        <div id="topvalue" class="realtimevalue"></div>
+        <input id="top" class="slider" type="range" min="0" max="5"></input>
+    </div>
+    <div>
+        <div style="float:left;">OO > &nbsp</div>
+        <div id="oovalue" class="realtimevalue"></div>
+        <input id="oo" class="slider" type="range" min="0" max="500" step="10"></input>
+    </div>
+    <div>
+        <div style="float:left;">(OO/XX) > &nbsp</div>
+        <div id="ratiovalue" class="realtimevalue"></div>
+        <input id="ratio" class="slider" type="range" min="0" max="100"></input>
+    </div>
+    <div>
+        <div id="status"> &nbsp</div>
+    </div>
+</div>
+</body>
+</html>
